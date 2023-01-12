@@ -9,16 +9,16 @@ def curso(request):
     return HttpResponse(cadena_texto)
 
 def cursos(request):
-    return HttpResponse("esto es una vista de cursos")
+    return render(request, "AppCoder/cursos.html")
 
 def estudiantes(request):
-    return HttpResponse("Esto es una vista de estudiantes")
+    return render(request, "AppCoder/estudiantes.html")
 
 def profesores(request):
-    return HttpResponse("Esto es una vista de profesores")
+    return render(request, "AppCoder/profesores.html")
 
 def entregables(request):
-    return HttpResponse("Esto es una vista de entregables")
+    return render(request, "AppCoder/entregables.html")
 
 def inicio(request):
-    return HttpResponse("Esto es el inicio")
+    return render(request, "AppCoder/inicio.html")
